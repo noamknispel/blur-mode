@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "BlurMode",
+  "description": "Blur your privat tabs when they are not active",
+  "version": "1.0",
+  "permissions": [
+    "*://web.whatsapp.com/*",
+    "*://web.telegram.org/*"
+  ],
+  "content_scripts": [
+    {
+      "run_at" :"document_end",
+      "matches": ["*://web.whatsapp.com/*", "*://web.telegram.org/*"],
+      "js": ["blurmode.js"],
+      "css": ["blurmode.css"]
+    }
+  ]
+}

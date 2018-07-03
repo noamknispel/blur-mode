@@ -1,0 +1,11 @@
+.blur-mode {
+  filter: blur(4px);
+}
+
+body {
+  --transition-time: .3s;
+  -webkit-transition-duration: var(--transition-time);
+  -moz-transition-duration: var(--transition-time);
+  -o-transition-duration: var(--transition-time);
+  transition-duration: var(--transition-time);
+}
